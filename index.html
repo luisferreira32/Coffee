@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Coffee</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="server.js"></script>
+</head>
+<body>
+  <div onKeyPress="return checkSubmit(event)"/>
+  <div class="header">
+    <h2>Free Coffee For Fast Typers</h2>
+  </div>
+
+  <form name="coffee_form" action="index.html" onsubmit="return check_token()" method="post" >
+    <span id="error_span"></span>
+    <div class="input-group">
+        <label>Redeem Code</label>
+        <input type="text" name="token" onkeypress="return check_submit()">
+    </div>
+    <div class="input-group">
+        <button type="submit" class="btn" name="login_user">PRESS HERE!</button>
+    </div>
+    <div align="right">
+      <p id="redeem_token" > Redeem Token here! </p>
+    </div>
+  </form>
+</body>
+</html>
